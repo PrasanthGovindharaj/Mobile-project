@@ -3,7 +3,7 @@ import React from 'react'
 const Tample = () => {
   return (
     <div>
-      Tample
+      Tample Name
     </div>
   )
 }
