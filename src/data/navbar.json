@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "menu_items": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Tample", "href": "/tample" },
+      { "label": "Personalize", "href": "/personalize" },
+      { "label": "Contact", "href": "/contact" }
+    ]
+  }
+]

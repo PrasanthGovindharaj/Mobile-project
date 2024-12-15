@@ -1,0 +1,129 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header .navbar {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.sticky {
+  background: #7e7f80;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .navbar .logo-text {
+  color: #101010;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 50%;
+  height: 40px;
+}
+
+header .navbar .nav-menu {
+  gap: 0.9rem;
+  display: flex;
+}
+
+header .navbar .bi {
+  display: none;
+}
+
+header .navbar .nav-menu .nav-link {
+  padding: 10px 18px;
+  color: #202020;
+  font-size: 1.12rem;
+  border-radius: 30px;
+  transform: 0.3s ease;
+}
+
+header .nav-link {
+  font-size: 18px;
+  padding: 10px 18px;
+  color: #2c2b2b;
+  font-family: inherit;
+  font-weight: 100;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+header .nav-link:focus,
+.nav-link:hover {
+  color: #303030;
+}
+
+header .nav-link:focus:after,
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+header .nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #161515;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+header .navbar .nav-menu .nav-link:hover {
+  color: #2e2b2b;
+}
+
+header .navbar .nav-menu.show {
+  right: 0;
+}
+
+@media screen and (max-width: 700px) {
+  header .nav-menu{
+        position: fixed;
+        background-color: #ffffff;
+        right: -450px;
+        height: 100%;
+        width: 260px;
+        top: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 8px;
+    }
+
+    header .navbar .bi{
+        display: block;
+        color: #000000;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    header a{
+        color: #ffffff;
+    }
+
+    header .navbar .nav-menu .nav-link{
+        display: block;
+        margin-top: 8px;
+        padding: 10px 20px;
+        color: #000000;
+        font-size:0.9rem;
+    }
+}

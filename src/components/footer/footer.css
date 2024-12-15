@@ -1,0 +1,113 @@
+.footer-dropdown {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+
+.dropbtn {
+  color: rgb(2, 2, 2);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropbtn i {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: block;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 15px;
+}
+
+.check-icon {
+  background-color: #f8b400;
+  color: #ddd;
+  font-size: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  
+}
+
+.item-text {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.item-value {
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+
+.check1 {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  margin-left: auto;
+}
+.check1 {
+  flex: 1;
+}
+
+.bmi-container {
+  margin-top: 10px;
+}
+
+.bmi-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+
+.bmi-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .footer-dropdown {
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    width: 100%;
+  }
+
+  .bmi-input {
+    font-size: 14px;
+  }
+}
