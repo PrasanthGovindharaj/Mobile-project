@@ -3,9 +3,8 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-      Home
+      HomePage
     </div>
   )
 }
-
 export default Home
